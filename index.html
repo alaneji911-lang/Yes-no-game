@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catch Me 😏</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+      background-color: #ffe6f0;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      border: none;
+      position: absolute;
+    }
+
+    #yes {
+      background-color: green;
+      color: white;
+      position: static;
+    }
+
+    #no {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>are you stupid ? ❤️</h1>
+
+<button id="yes" onclick="yesClick()">Yes</button>
+<button id="no" class="btn">No</button>
+
+<script>
+const noBtn = document.getElementById("no");
+
+function moveButton() {
+  const x = Math.random() * (window.innerWidth - 100);
+  const y = Math.random() * (window.innerHeight - 50);
+
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+}
+
+// يخدم باللمس في iPhone
+noBtn.addEventListener("touchstart", moveButton);
+
+function yesClick() {
+  document.body.innerHTML = "<h1>zayid bhim 🤣🤣</h1>";
+}
+</script>
+
+</body>
+</html>
